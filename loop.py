@@ -22,3 +22,25 @@
 for x in range (0,101,3):
     print(x)
 
+
+
+#pass , break (terminaate a loop ) , continue ( skiping an iteration)
+
+for x in range(5):
+    pass
+print("ffgdtd")
+
+
+# for x in range(5):
+#       if(x == 3):
+#           break
+#       print(x)
+      
+# print("out of the loop")
+
+
+for  x in range(5):
+    if(x == 3):
+        continue
+    print(x)
+print("out of the loop")
