@@ -70,7 +70,9 @@ print(f"{'Abhijith':<10}{'19':<5}{'BCA':>10}")
 print(f"{'Abhijith':<10}{'19':<5}{'BCA':>10}")
 print(f"{'Abhijith':<10}{'19':<5}{'BCA':>10}")
 print(f"{'Abhijith':<10}{'19':<5}{'BCA':>10}")
-print('.'*25)
+print('.'*25)   
+
+
 
 
 
