@@ -56,3 +56,4 @@ print(numbers.issuperset(even_numbers))
 print(even_numbers.issubset(numbers))
 print(numbers.isdisjoint(even_numbers))
 print({1,5,7}.isdisjoint({2,8,10}))
+
