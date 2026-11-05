@@ -63,38 +63,83 @@
 # greet(user="Amal", msg="Good morning")  # calling the function with keyword arguments
 
 
-def add(a,b):
-    return a+b
+# def add(a,b):
+#     return a+b
 
-def multiply(a,b):
-    return a*b
+# def multiply(a,b):
+#     return a*b
 
-def subtract(a,b):
-    return a-b
+# def subtract(a,b):
+#     return a-b
 
-def divide(a,b):
-    return a/b
+# def divide(a,b):
+#     return a/b
 
-while True:
-    choice = input('+ for addition, - for subtraction, * for multiplication, / for division, exit\n enter your choice: ')
-    try:
-        n1 = int(input("Enter first number: "))
-        n2 = int(input("Enter second number: "))
-    except ValueError:
-        print("Only integers are allowed..")
-        continue
-    match choice.strip():
-        case '+':
-            print(add(n1,n2))
-        case '-':
-            print(subtract(n1,n2))
-        case '*':
-            print(multiply(n1,n2))
-        case '/':
-            print(divide(n1,n2))
-        case 'x':
-            break
-        case _:
-            print("Invalid choice")
+# while True:
+#     choice = input('+ for addition, - for subtraction, * for multiplication, / for division, exit\n enter your choice: ')
+#     try:
+#         n1 = int(input("Enter first number: "))
+#         n2 = int(input("Enter second number: "))
+#     except ValueError:
+#         print("Only integers are allowed..")
+#         continue
+#     match choice.strip():
+#         case '+':
+#             print(add(n1,n2))
+#         case '-':
+#             print(subtract(n1,n2))
+#         case '*':
+#             print(multiply(n1,n2))
+#         case '/':
+#             print(divide(n1,n2))
+#         case 'x':
+#             break
+#         case _:
+#             print("Invalid choice")
             
             
+
+
+# lambda parameters: statement          
+
+# n = 5
+# def square(x):
+#     return x *x
+# print(square(n))
+# print(square(10))
+# print(square(20))
+# print(square(30))
+
+# square = lambda x: x*x
+# print(square(4))
+# print(square(10))
+# print(square(20))
+# print(square(30))
+
+# def type_of_number(n):
+#     if n > 0:
+#         return "Positive"
+#     elif n < 0:
+#         return "Negative"
+#     else:
+#         return "Zero"
+
+
+# trueexpression if condition else falseexpression
+
+# check_type = lambda n: "Positive" if n > 0 else "Negative" if n < 0 else "Zero"
+
+# print(check_type(5))
+# print(check_type(-5))
+# print(check_type(0))
+
+
+from functools import reduce
+
+l1 = [10,22,62,111,222,67]
+squared_numbers = list(map(lambda x: x*x, l1))
+even_numbers = filter(lambda x: x%2==0, l1)
+result = reduce(lambda x,y: x+y, l1)
+print(squared_numbers)
+print(list(even_numbers))
+print(result)
