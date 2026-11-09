@@ -28,3 +28,9 @@ with open('name.txt','w') as file:
     print(file.tell())
     file.seek(10)           # returns the 
     print(file.read(5))
+    
+    
+    
+    
+# import os
+# print(os.path.exists('name.txt'))  # checks if the file exists or not
