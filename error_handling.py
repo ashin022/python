@@ -35,20 +35,31 @@
 # finally:
 #     executes in any case
 
+# try:
+#     n = int(input("Enter a number: "))
+#     result = 56/n
+# except ValueError:
+#     print("Only integers are allowed..")
+# # except ZeroDivisionError:
+# #     print("Zero is not allowed")
+# # except (ValueError, ZeroDivisionError):
+# #     print("non-integers and zeros are not allowed")
+# except Exception as e:
+#     print("Error occured")
+# else:
+#     print(result)
+# finally:
+#     print("Exception completed")
+
+# print("After try-except block")
+
+class invalidAgeError(Exception):
+    pass
 try:
-    n = int(input("Enter a number: "))
-    result = 56/n
+    age = int(input("Enter your age: "))
+    if age < 0:
+        raise invalidAgeError("Age cannot be negative")
 except ValueError:
     print("Only integers are allowed..")
-# except ZeroDivisionError:
-#     print("Zero is not allowed")
-# except (ValueError, ZeroDivisionError):
-#     print("non-integers and zeros are not allowed")
-except Exception as e:
-    print("Error occured")
-else:
-    print(result)
-finally:
-    print("Exception completed")
-
-print("After try-except block")
+except invalidAgeError as e:
+    print(e)
