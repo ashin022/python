@@ -107,4 +107,3 @@ import random
 user = input("Enter your choice : ")
 computer = random.choice(["rock", "paper", "scissors"])
 print(f"Computer choice: {computer}")
-print(f"User choice: {user}")
